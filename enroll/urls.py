@@ -3,4 +3,6 @@ from .import views
 urlpatterns = [
     # path('stu/',views.Studentinfo),
     path('registration/',views.showformdata), 
+    path('success/',views.thankyou),
+    
 ]

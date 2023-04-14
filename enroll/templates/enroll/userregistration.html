@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="" />
   </head>
   <body>
-    <form action="" method="post">
+    <form action="" method="post" novalidate >
       {% comment %} {% for field in form.visible_fields %} {{field}} {% endfor %}
       {% for hidden in form.hidden_fields %} {{hidden}} {% endfor %}
       <input type="submit" value="Submit" /> {% endcomment %}
        {% csrf_token %}
-      {{form.as_p}}
+        {{form.as_p}}
       <input type="submit" value="Submit">
 
 
